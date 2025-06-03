@@ -85,6 +85,8 @@ WHEN exc_already_exists
 THEN NULL;
 END;
 /
+CREATE INDEX idx_ID_CUID ON SDM.DCT_CLIENT_LIFECYCLE_MTRX (ID_CUID)
+/
 comment on table SDM.DCT_CLIENT_LIFECYCLE_MTRX is
 'Reference table for Customer data records to be used by Field Officers'
 /
